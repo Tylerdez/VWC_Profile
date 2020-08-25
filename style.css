@@ -3,12 +3,26 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    /*
+    https://colorhunt.co/palette/196240
+    */
+    border-right: solid 25px #84a9ac;
+    border-left: solid 25px #84a9ac;
+    border-bottom: solid 50px #84a9ac;
+}
+
 .container0 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
 }
 
 /*
@@ -68,9 +82,8 @@ img {
 }
 
 .container3 > div {
-    width: 200px;
-    height: 200px;
-    border: solid black 2px;
+    width: 100px;
+    height: 100px;
     margin: 20px;
 }
 
@@ -87,6 +100,8 @@ nav {
 
   padding: 0 15px;
 
+  border-top: solid 80px #3B6978;
+
 }
 
 a {
@@ -96,8 +111,6 @@ a {
   text-decoration: none;
 
 }
-
-.menu,
 
 .submenu {
 
@@ -220,6 +233,7 @@ a {
      flex-wrap: wrap;
      flex: 100%;
      max-width: 100%;
+     text-align: center;
     }
   }
 
