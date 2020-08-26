@@ -9,7 +9,8 @@ body {
     */
     border-right: solid 25px #84a9ac;
     border-left: solid 25px #84a9ac;
-    border-bottom: solid 50px #84a9ac;
+    border-bottom: solid 40px #84a9ac;
+    margin: 0;
 }
 
 .container0 {
@@ -55,12 +56,13 @@ ul {
     display: flex;
     justify-content: center;
     align-content: center;
+    background: #E4E3E3;
 }
 
 img {
     max-height: 500px;
     max-width: 100%;
-    border: solid white 10px;
+    border: solid #3B6978 5px;
 }
 
 .container2 {
@@ -69,6 +71,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 20px;
 }
 
 .things {
@@ -100,7 +103,7 @@ nav {
 
   padding: 0 15px;
 
-  border-top: solid 80px #3B6978;
+  border-top: solid 60px #3B6978;
 
 }
 
