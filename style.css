@@ -3,14 +3,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.dark-mode {
+    background-image: none;
+    background-color: black;
+    color: white;
+}
+
 body {
     /*
     https://colorhunt.co/palette/196240
     */
-    border-right: solid 25px #84a9ac;
-    border-left: solid 25px #84a9ac;
-    border-bottom: solid 40px #84a9ac;
+    border-right: solid 25px darkkhaki;
+    border-left: solid 25px darkkhaki;
     margin: 0;
+    animation-name: textappears;
+    animation-duration: 3s; 
+    background-image: url(images/tree_bark.png);
+}
+
+@keyframes textappears {
+    0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .container0 {
@@ -54,15 +67,24 @@ ul {
     flex: 50%;
     max-width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
-    background: #E4E3E3;
 }
 
 img {
     max-height: 500px;
     max-width: 100%;
-    border: solid #3B6978 5px;
+    margin: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: moveimage;
+    animation-duration: 1s; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveimage {
+    from {left: 0px;}
+    to {left: 25%} 
 }
 
 .container2 {
@@ -93,7 +115,9 @@ img {
 footer {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    align-items: center;
+    /*border-bottom: solid 60px #3B6978;*/
+    height: 300px;
 }
 
 /*Nav Bar*/
@@ -103,7 +127,7 @@ nav {
 
   padding: 0 15px;
 
-  border-top: solid 60px #3B6978;
+  /*border-top: solid 60px #3B6978;*/
 
 }
 
@@ -123,10 +147,14 @@ a {
 
 .logo {
 
-  font-size: 20px;
+  font-size: 40px;
 
   padding: 7.5px 10px 7.5px 0;
 
+}
+
+.logo a {
+    color: darkkhaki;
 }
 
 .item {
@@ -159,11 +187,9 @@ a {
 
     flex-wrap: wrap;
 
-    justify-content: center; /*or space-between to put bars to right*/
-
+    justify-content: space-between; /*or space-between to put bars to right*/
 
     align-items: center;
-
 }
 
 .menu li a {
@@ -184,7 +210,9 @@ a {
 
     order: 1;
 
-    font-size: 20px;
+    font-size: 30px;
+
+    margin: 20px;
 
 }
 
@@ -220,23 +248,100 @@ a {
 
 /*End Nav Bar*/
 
-@media (max-width: 800px) {
+
+
+/*Begin Toggle Switch*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: darkkhaki;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/*End Toggle Switch*/
+
+
+@media (max-width: 1000px) { /* 1000px and under */
     .container0, .container1, .container2 {
         display: flex;
         flex-wrap: wrap;
         flex: 100%;
         max-width: 100%;
        }
+
+       .container0 {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
   }
   
  
-  @media (max-width: 600px) {
+  @media (max-width: 600px) { /* 600px and under */
     .container0, .container1, .container2 {
      display: flex;
      flex-wrap: wrap;
      flex: 100%;
      max-width: 100%;
      text-align: center;
+    }
+
+    @keyframes moveimage {
+        from {left: 0px;}
+        to {left: 10%} 
     }
   }
 

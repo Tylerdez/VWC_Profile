@@ -85,3 +85,11 @@ for (let item of items) {
 }
 
 document.addEventListener("click", closeSubmenu, false);
+
+
+/*Button Toggle*/
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
