@@ -13,8 +13,8 @@ body {
     /*
     https://colorhunt.co/palette/196240
     */
-    border-right: solid 25px darkkhaki;
-    border-left: solid 25px darkkhaki;
+    border-right: solid 25px lightblue;
+    border-left: solid 25px lightblue;
     margin: 0;
     animation-name: textappears;
     animation-duration: 3s; 
@@ -153,7 +153,7 @@ a {
 }
 
 .logo a {
-    color: darkkhaki;
+    color: lightblue;
 }
 
 .item {
@@ -271,7 +271,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: darkkhaki;
+    background-color: lightblue;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -321,6 +321,8 @@ a {
 .me2 {
   width: 400px;
   height: 400px;
+  border-radius: 5%;
+  margin: 5px;
 }
 
 
