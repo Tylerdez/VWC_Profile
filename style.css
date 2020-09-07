@@ -18,7 +18,7 @@ body {
     margin: 0;
     animation-name: textappears;
     animation-duration: 3s; 
-    background-image: url(images/tree_bark.png);
+    /*background-image: url(images/tree_bark.png);*/
 }
 
 @keyframes textappears {
