@@ -339,6 +339,10 @@ a {
   margin: 5px;
 }
 
+.switch {
+  margin-left: auto;
+}
+
 
 @media (max-width: 1679px) { /* 1000px and under */
   .pics {
@@ -373,6 +377,16 @@ a {
 
     .container1 {
       margin-top: 100px;
+    }
+
+    .switch {
+      margin-left: unset; 
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 
