@@ -85,9 +85,9 @@ ul {
 }
 
 .me {
-    max-height: 500px;
-    max-width: 100%;
-    border-radius: 5%;
+    max-height: 400px;
+    max-width: 400px;
+    border-radius: 50%;
     position: relative;
     animation-name: moveimage;
     animation-duration: 3s; 
@@ -356,6 +356,10 @@ a {
       flex: 100%;
       max-width: 100%;
   }
+
+  .container1 {
+    margin-top: 100px;
+  }
 }
 
   @media (max-width: 600px) { /* 600px and under */
@@ -365,6 +369,10 @@ a {
      flex: 100%;
      max-width: 100%;
      text-align: center;
+    }
+
+    .container1 {
+      margin-top: 100px;
     }
   }
 
