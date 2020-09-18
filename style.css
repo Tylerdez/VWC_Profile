@@ -7,6 +7,7 @@
     background-image: none;
     background-color: black;
     color: white;
+    
 }
 
 video {
@@ -20,7 +21,7 @@ video {
 }
 
 .menu {
-  margin: 0;
+  
 }
 
 body {
@@ -130,15 +131,12 @@ footer {
     justify-content: center;
     align-items: center;
     /*border-bottom: solid 60px #3B6978;*/
-    height: 300px;
 }
 
 /*Nav Bar*/
 nav {
 
   background: #222;
-
-  padding: 0 15px;
 
   /*border-top: solid 60px #3B6978;*/
 
@@ -158,12 +156,15 @@ a {
 
 }
 
-.logo {
-
+#logo {
   font-size: 40px;
-
-  padding: 7.5px 10px 7.5px 0;
-
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;*/
+  color: lightblue;
+  margin: auto;
+  padding: auto;
 }
 
 .logo a {
@@ -200,11 +201,11 @@ a {
 
     flex-wrap: wrap;
 
-    justify-content: space-between; /*or space-between to put bars to right*/
+    justify-content: center; /*or space-between to put bars to right*/
 
     align-items: center;
 }
-
+/*
 .menu li a {
 
     display: block;
@@ -218,7 +219,7 @@ a {
     padding: 15px;
 
 }
-
+*/
 .toggle {
 
     order: 1;
@@ -339,10 +340,6 @@ a {
   margin: 5px;
 }
 
-.switch {
-  margin-left: auto;
-}
-
 
 @media (max-width: 1679px) { /* 1000px and under */
   .pics {
@@ -385,8 +382,9 @@ a {
 
     .menu {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
+      align-items: center;
     }
   }
 
