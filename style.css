@@ -383,7 +383,8 @@ a {
       align-items: center;
     }
 
-    video{
+    video {
+      
       height: 300px;
     }
   }
