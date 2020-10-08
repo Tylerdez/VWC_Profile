@@ -94,7 +94,7 @@ function myFunction() {
   element.classList.toggle("dark-mode");
 }
 
-/************Weather API************************/
+/************Weather API************************
 
 // SELECT ELEMENTS
 const tempElement = document.querySelector(".temperature-value p");
