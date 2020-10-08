@@ -7,22 +7,19 @@
     background-image: none;
     background-color: black;
     color: white;
-    
 }
 
 video {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 500px;
+  height: 300px;
   object-fit: fill;
   margin: 0;
   padding: 0;
 }
 
-.menu {
-  
-}
+
 
 body {
     /*
@@ -32,8 +29,10 @@ body {
     border-left: solid 25px lightblue;
     margin: 0;
     animation-name: textappears;
-    animation-duration: 3s; 
+    animation-duration: 10s; 
     /*background-image: url(images/tree_bark.png);*/
+    background-image: url("https://res.cloudinary.com/dfsjn5c2a/image/upload/v1602116861/Profile2/Swimming_With_Barracuda_ckcsvg.svg");
+    background-position: top;
 }
 
 @keyframes textappears {
@@ -82,12 +81,13 @@ ul {
     flex: 40%;
     max-width: 40%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 20px;
 }
 
 .me {
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 200px;
+    max-width: 200px;
     border-radius: 50%;
     position: relative;
     animation-name: moveimage;
@@ -108,11 +108,20 @@ ul {
     flex-direction: column;
     justify-content: center;
     margin: 20px;
+    color: white;
+    font-weight: bold;
 }
 
 .things {
     display: flex;
     flex-direction: column;
+    border: solid navy 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.things > p {
+  margin: 0;
 }
 
 .container3 {
@@ -162,7 +171,7 @@ a {
   justify-content: center;
   align-items: center;
   padding-top: 20px;*/
-  color: lightblue;
+  color: white;
   margin: auto;
   padding: auto;
 }
@@ -336,6 +345,70 @@ a {
   margin: 5px;
 }
 
+/********Start APIs***************/
+.API {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+.weather {
+  border-radius: 10px;
+  background: white;
+  width: 40%;
+  height: 250px;
+}
+
+.weather p {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: large;
+}
+
+.campsites {
+  border-radius: 10px;
+  background: white;
+  width: 40%;
+  margin-left: 40px;
+  height: 250px;
+}
+
+.campsites p {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: large;
+}
+
+.divesites {
+  border-radius: 10px;
+  background: white;
+  width: 40%;
+  margin-left: 40px;
+  height: 250px;
+}
+
+.divesites p {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: large;
+}
+
+/***********End APIs*****************/
+
 
 @media (max-width: 1679px) { /* 1000px and under */
   .pics {
@@ -344,7 +417,7 @@ a {
         flex: 100%;
         max-width: 100%;
     }
-}
+
 
 @media (max-width: 1000px) { /* 1000px and under */
   .container0, .container1, .container2 {
