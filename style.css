@@ -376,14 +376,14 @@ a {
   background: rgba(70, 200, 255, 0.7); /*opacity*/
   width: 40%;
   height: 250px;
-}
-
-.weather p {
-  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.weather p {
+  color: black;
   padding: 10px;
   font-size: large;
 }
@@ -394,14 +394,15 @@ a {
   width: 40%;
   margin-left: 40px;
   height: 250px;
-}
-
-.campsites p {
-  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.campsites p {
+  color: black;
   padding: 10px;
   font-size: large;
 }
@@ -412,14 +413,15 @@ a {
   width: 40%;
   margin-left: 40px;
   height: 250px;
-}
-
-.divesites p {
-  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.divesites p {
+  color: black;
   padding: 10px;
   font-size: large;
 }
