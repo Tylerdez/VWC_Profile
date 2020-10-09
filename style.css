@@ -82,12 +82,12 @@ ul {
     max-width: 40%;
     display: flex;
     align-items: flex-start;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .me {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 300px;
+    max-width: 300px;
     border-radius: 50%;
     position: relative;
     animation-name: moveimage;
@@ -110,18 +110,34 @@ ul {
     margin: 20px;
     color: white;
     font-weight: bold;
+    margin-top: 80px;
+}
+
+.aboutMe, .things {
+  display: flex;
+  flex-direction: column;
+  width: 80%
+}
+
+.container2 > div > p {
+  color: greenyellow;
 }
 
 .things {
     display: flex;
     flex-direction: column;
-    border: solid navy 5px;
     border-radius: 10px;
     padding: 10px;
+    margin-top: 60px;
+    background: rgba(70, 200, 255, 0.7); /*opacity*/
+}
+
+.things > h1, p {
+  margin: 0;
 }
 
 .things > p {
-  margin: 0;
+  margin-top: 10px;
 }
 
 .container3 {
@@ -336,6 +352,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 
 .me2 {
@@ -351,12 +368,12 @@ a {
   flex-direction: row;
   width: 80%;
   margin-left: 0;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .weather {
   border-radius: 10px;
-  background: white;
+  background: rgba(70, 200, 255, 0.7); /*opacity*/
   width: 40%;
   height: 250px;
 }
@@ -373,7 +390,7 @@ a {
 
 .campsites {
   border-radius: 10px;
-  background: white;
+  background: rgba(70, 200, 255, 0.7); /*opacity*/
   width: 40%;
   margin-left: 40px;
   height: 250px;
@@ -391,7 +408,7 @@ a {
 
 .divesites {
   border-radius: 10px;
-  background: white;
+  background: rgba(70, 200, 255, 0.7); /*opacity*/
   width: 40%;
   margin-left: 40px;
   height: 250px;
