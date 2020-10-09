@@ -5,7 +5,7 @@
 
 .dark-mode {
     background-image: none;
-    background-color: black;
+    background-color: darkcyan;
     color: white;
 }
 
@@ -29,7 +29,7 @@ body {
     border-left: solid 25px lightblue;
     margin: 0;
     animation-name: textappears;
-    animation-duration: 10s; 
+    animation-duration: 4s; 
     /*background-image: url(images/tree_bark.png);*/
     background-image: url("https://res.cloudinary.com/dfsjn5c2a/image/upload/v1602116861/Profile2/Swimming_With_Barracuda_ckcsvg.svg");
     background-position: top;
