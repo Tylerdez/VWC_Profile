@@ -438,7 +438,7 @@ a {
     }
 
 
-@media (max-width: 1000px) { /* 1000px and under */
+@media (max-width: 900px) { /* 1000px and under */
   .container0, .container1, .container2 {
      display: flex;
      flex-direction: column;
@@ -448,6 +448,10 @@ a {
      max-width: 100%;
      text-align: center;
      margin: 0px;
+    }
+
+    .container0 {
+      margin-top: 100px;
     }
 
     .API {
