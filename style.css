@@ -454,10 +454,25 @@ a {
   @media (max-width: 600px) { /* 600px and under */
     .container0, .container1, .container2 {
      display: flex;
-     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
      flex: 100%;
      max-width: 100%;
      text-align: center;
+     margin: 0px;
+    }
+
+    .API {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .weather, .campsites, .divesites {
+      margin: 20px;
+      width: 80%;
     }
 
     .container1 {
