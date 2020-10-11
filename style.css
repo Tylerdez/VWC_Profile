@@ -86,8 +86,8 @@ ul {
 }
 
 .me {
-    max-height: 300px;
-    max-width: 300px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     position: relative;
     animation-name: moveimage;
@@ -427,7 +427,21 @@ a {
 }
 
 /***********End APIs*****************/
+@media (max-width: 4000px) {
+  .things {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .container2 {
+    margin-top: 50px;
+  }
+
+  .me {
+    margin-top: 50px;
+  }
+}
 
 @media (max-width: 1679px) { /* 1679px and under */
   .pics {
