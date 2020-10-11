@@ -401,6 +401,14 @@ a {
   text-align: center;
 }
 
+.app-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .campsites p {
   color: black;
   padding: 10px;
