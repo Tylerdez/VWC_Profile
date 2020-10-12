@@ -459,6 +459,11 @@ a {
         max-width: 100%;
     }
 
+    .me {
+      width: 150px;
+      height: 150px;
+    }
+  }
 
 @media (max-width: 900px) { /* 1000px and under */
   .container0, .container1, .container2 {
@@ -531,6 +536,11 @@ a {
     video {
       width: 100%;
       height: 300px;
+    }
+
+    .me {
+      width: 150px;
+      height: 150px;
     }
   }
 
