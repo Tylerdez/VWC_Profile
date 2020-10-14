@@ -123,11 +123,13 @@ ul {
   color: greenyellow;
 }
 
-.things {
+.aboutMe, .things {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
-    padding: 10px;
+    padding: 7px;
     margin-top: 60px;
     background: rgba(70, 200, 255, 0.7); /*opacity*/
 }
@@ -138,6 +140,10 @@ ul {
 
 .things > p {
   margin-top: 10px;
+}
+
+.aboutMe > p {
+  padding: 10px;
 }
 
 .container3 {
