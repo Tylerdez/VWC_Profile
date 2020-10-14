@@ -436,6 +436,15 @@ a {
 
 /***********End APIs*****************/
 @media (max-width: 4000px) {
+  body {
+    width: 70%;
+    margin-left:auto;
+    margin-right:auto;
+    background-repeat: repeat-y;
+    background-size: 70%;
+    background-position: top;
+  }
+
   .things {
     display: flex;
     justify-content: center;
