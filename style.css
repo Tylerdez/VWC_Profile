@@ -93,6 +93,7 @@ ul {
     animation-duration: 3s; 
     animation-fill-mode: forwards;
     transform:translate3d(-50%,0,0);
+    border: solid black 4px;
 }
 
 @keyframes moveimage {
@@ -447,8 +448,8 @@ a {
 
   .me {
     margin-top: 50px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -461,8 +462,8 @@ a {
     }
 
     .me {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
     }
   }
 
@@ -524,7 +525,7 @@ a {
     }
 
     .container1 {
-      margin-top: 100px;
+      margin-top: auto;
     }
 
     .switch {
